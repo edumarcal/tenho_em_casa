@@ -1,5 +1,5 @@
 <?php
-
+# Agradeço a Deus pelo dom do conhecimento
 use Illuminate\Http\Request;
 
 /*
@@ -16,3 +16,7 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::resource('/produtos', 'ProdutoController')->only([
+    'index', 'show', 'store', 'update', 'destroy',
+]);
