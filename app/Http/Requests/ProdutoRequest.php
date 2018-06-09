@@ -38,9 +38,9 @@ class ProdutoRequest extends FormRequest
     public function messages()
     {
         return [
-            'nome.required' => 'O campo "nome" é obrigatório.',
-            'validade.required'  => 'O campo "validade" é obrigatório.',
-            'quantidade.required'  => 'O campo "quantidade" é obrigatório.',
+            'nome.required' => 'required',
+            'validade.required'  => 'required',
+            'quantidade.required'  => 'required',
         ];
     }
 }
